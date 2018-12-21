@@ -1,5 +1,5 @@
 # find-file-recursively-up
-[![Build Status](https://travis-ci.com/mateodelnorte/find-file-recursively-up.svg?branch=master)](https://travis-ci.com/mateodelnorte/find-file-recursively-up)
+[![Build Status](https://travis-ci.com/mateodelnorte/find-file-recursively-up.svg?branch=master)](https://travis-ci.com/mateodelnorte/find-file-recursively-up) [![Greenkeeper badge](https://badges.greenkeeper.io/mateodelnorte/find-file-recursively-up.svg)](https://greenkeeper.io/)
 
 returns the path at which a provided filename exists, checking the current directory and any parent folders recursively up. 
 
