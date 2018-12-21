@@ -13,6 +13,10 @@ script:
   - npm run test
   - codecov
 
+branches:
+  except:
+    - '/^v\d+\.\d+\.\d+$/'
+
 jobs:
   include:      
     - stage: deploy
