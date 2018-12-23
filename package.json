@@ -22,7 +22,7 @@
     "url": "https://github.com/mateodelnorte/find-file-recursively-up/issues"
   },
   "homepage": "https://github.com/mateodelnorte/find-file-recursively-up#readme",
-  "devDependencies": {
+  "dependencies": {
     "debug": "4.1.0"
   }
 }
