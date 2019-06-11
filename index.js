@@ -4,10 +4,8 @@ const path = require('path');
 
 let cwd = process.cwd();
 
-module.exports = function (filename, cb) {
-
-  function findIn (dotsAndSlashes) {
-
+module.exports = function(filename, cb) {
+  function findIn(dotsAndSlashes) {
     const fullpath = path.join(cwd, dotsAndSlashes, filename);
 
     debug(`looking for ${filename} at ${fullpath}`);
@@ -17,14 +15,11 @@ module.exports = function (filename, cb) {
     if (exists) {
       return cb(null, fullpath);
     } else {
-
       if (path.resolve(cwd, dotsAndSlashes) === '/') return cb();
 
-      return findIn(path.join('..', dotsAndSlashes))
+      return findIn(path.join('..', dotsAndSlashes));
     }
-
   }
 
   return findIn('.');
-
-}
+};

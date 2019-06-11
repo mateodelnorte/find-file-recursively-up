@@ -4,7 +4,16 @@
   "description": "returns the path at which a provided filename exists, checking the current directory and any parent folders recursively up",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests.\""
+    "commit": "git-cz",
+    "lint": "prettier --write \"bin/*\" index.js",
+    "test": "jest --config jest.json --coverage",
+    "test:coverage": "jest --config jest.json --coverage",
+    "test:watch": "jest --config jest.json --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "repository": {
     "type": "git",
@@ -24,5 +33,15 @@
   "homepage": "https://github.com/mateodelnorte/find-file-recursively-up#readme",
   "dependencies": {
     "debug": "4.1.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.0"
   }
 }
