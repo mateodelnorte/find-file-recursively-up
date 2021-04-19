@@ -4,7 +4,7 @@ const path = require('path');
 
 let cwd = process.cwd();
 
-module.exports = function(filename, cb) {
+module.exports = function (filename, cb) {
   function findIn(dotsAndSlashes) {
     const fullpath = path.join(cwd, dotsAndSlashes, filename);
 
