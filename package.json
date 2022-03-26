@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/mateodelnorte/find-file-recursively-up#readme",
   "dependencies": {
-    "debug": "4.3.2"
+    "debug": "4.3.4"
   },
   "devDependencies": {
     "@commitlint/cli": "12.1.4",
